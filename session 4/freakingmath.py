@@ -1,8 +1,14 @@
+#bit = boolean
+#true
+
+
+
+
 from random import *
 def generate_quiz():
-    num1 = randint(0, 20)
-    num2 = randint(0, 10)
-    sign = choice([ "+", "-", "*", "/"] )
+    num1 = randint(1, 20)
+    num2 = randint(1, 10)
+    sign = choice([ "+","+", "+", "-", "*", "/"] )
     if sign == " + ":
         answer = num1 + num2 + choice([ -1, 0, 1])
     elif sign == " - ":

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favourite</title>
+</head>
+<body>
+<h3>I like watching film so much ^^</h3>
+<h3>Here're some name that I like most</h3>
+
+    {% for film in films %}
+        <h3>Name {{ film.name }}</h3>
+        <img src="{{ film.img }}">
+        <h4>Information {{ film.info }}</h4>
+        <h4><a href="{{ film.link }}">Link phim</a></h4>
+    {% endfor %}
+
+
+</body>
+</html>
